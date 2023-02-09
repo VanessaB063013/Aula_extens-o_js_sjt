@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*Receba três notas, calcule e apresente a média aritmética das notas informadas.*/
+        const nota1 = parseFloat(prompt("Entre com a primeira nota: ",""));
+        const nota2 = parseFloat(prompt("Entre com a segunda nota: ",""));
+        const nota3 = parseFloat(prompt("Entre com a terceira nota: ",""));
+        const media = (nota1 + nota2 + nota3)/3;
+        //document.write("Sua nota final é : " + `${media.toFixed(2)}`);
+
+        /*Média >= 6 --- aprovado
+          Media <= 5.9 && media >=5 --- aluno em recuperação 
+          Media <=4.9 aluno reprovado  */
+          if(media >= 6){
+            document.write("Você foi aprovado.<br> Média: " + `${media}`);
+          }else if(media <= 5.9 && media >= 5){
+            document.write("Aluno em recuperação.<br> Média: " + `${media}`);
+          }else{
+            document.write("Aluno reprovado.<br> Média: " + `${media}`);
+          }
+
+          /*Js é sensitive case. para converter usar .toLowerCase()*/
+
+    </script>
+</body>
+</html>

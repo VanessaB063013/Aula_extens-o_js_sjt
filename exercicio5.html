@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*Receba os valores dos dois catetos de um triângulo, calcule e apresente o valor da
+            hipotenusa. OBS - Teorema de Pitágoras: a
+            2 = b2 + c2
+            .*/
+
+            const cat1 = parseInt(prompt("Entre com o primeiro cateto: ", ""));
+            const cat2 = parseInt(prompt("Entre com o segundo cateto: ",""));
+            const pot = (Math.pow(cat1,2)) + (Math.pow(cat2,2));
+            const hip = Math.sqrt(pot,2);
+            document.write("Valor da hipotenusa: " + `${hip.toFixed(2)}`);
+
+    </script>
+</body>
+</html>

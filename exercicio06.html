@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*6) Receba o raio, calcule e apresente:
+            a. O comprimento de uma esfera: C = 2 * π * R.
+            b. A área de uma esfera: A = π * R2
+            c. O volume de uma esfera: V = 3⁄4 * π * R3
+.*/
+
+            const raio = parseInt(prompt("Entre com o valor do raio: "));
+            const compEsfera = 2 * Math.PI * raio;
+            const areaEsfera = Math.PI * Math.pow(raio,2);
+            const volEsfera = ((3/4) * Math.PI * Math.pow(raio,3));
+            document.write("comprimento da esfera: " + `${compEsfera.toFixed(2)}<br>`); 
+            document.write("Area da esfera : " + `${areaEsfera.toFixed(2)}<br>`);
+            document.write("Volume de uma esfera: " + `${volEsfera.toFixed(2)}`);
+
+    </script>
+</body>
+</html>

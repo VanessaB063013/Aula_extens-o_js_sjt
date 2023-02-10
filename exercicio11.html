@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script text="text/javascript">
+        /*Permita gerenciar a folha de pagamento de uma empresa. O algoritmo deve receber o
+código do(a) colaborador(a) e as horas trabalhadas por ele(a). O algoritmo deve
+apresentar o valor bruto a ser pago (horas * valor da hora). Os colaboradores com o
+respectivo código e valor da hora de trabalho são apresentados na tabela abaixo:
+
+Código Nome Valor da Hora
+(R$)
+1 Ana 45,78
+2 Bruna 60,00
+3 Carlos 38,99
+4 Diogo 45,78
+5 Ester 45,78*/
+
+const codigo = parseInt(prompt("Entre com o código: ", ""));
+const horas = parseFloat(prompt("Entre com as horas trabalhadas: " , ""));
+
+
+switch(codigo){
+    case 1:
+        document.write(`Ana <br>Valor da hora R$ 45,78 <br> Quantidade de horas trabalhadas: ${horas}<br> 
+        Total a receber  R$${horas * 45.78}`)
+        
+    break;
+    case 2:
+        document.write(`Bruna <br>Valor da hora R$ 60,00 <br> Quantidade de horas trabalhadas: ${horas}<br>
+        Total a receber = R$${horas * 60.00}`)
+        
+    break;
+    case 3:
+        document.write(`Carlos<br> Valor da hora R$ 38,99 <br> Quantidade de horas trabalhadas: ${horas}<br>
+        Total a receber = R$${horas * 60.00}`)
+        
+    break;
+    case 4:
+        document.write(`Diogo<br> Valor da hora R$ 45,78 <br> Quantidade de horas trabalhadas: ${horas}<br>
+        Total a receber = R$${horas * 60.00}`)
+        
+    break;
+    case 5:
+        document.write(`Ester<br> Valor da hora R$ 45,78 <br> Quantidade de horas trabalhadas: ${horas}<br>
+        Total a receber = R$${horas * 60.00}`)
+        
+    break;
+    default: document.write("Código inválido !!!")
+
+}
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*2) Determine o Índice de Massa Corpórea (IMC) de um indivíduo. O IMC é definido como a
+relação entre o peso (em kg) e o quadrado da Altura (em m) do indivíduo:
+
+IMC = PESO / ALTURA2
+
+A situação do peso em função do IMC é indicada na tabela abaixo:
+
+IMC Situação
+Abaixo de 20 Abaixo do Peso
+De 20 até 25 Normal
+De 25 até 30 Sobrepeso
+De 30 até 35 Obesidade grau I
+De 35 até 40 Obesidade grau II
+Acima de 40 Obesidade grau III*/ 
+
+const altura = parseFloat(prompt("Entre com a altura em metros: ", ""));
+const peso = parseFloat(prompt("Entre com o peso em Kg:" , ""));
+const calcImc = peso / (Math.pow(altura,2));
+
+if(calcImc<20){
+    document.write(`Abaixo do peso!<br> IMC: ${calcImc.toFixed(2)}`);
+}else if(calcImc>=20 && calcImc<=25){
+    document.write(`Normal!<br> IMC: ${calcImc.toFixed(2)}`);
+}else if(calcImc>25 && calcImc<=30){
+    document.write(`Sobrepeso!<br> IMC: ${calcImc.toFixed(2)}`);
+}else if(calcImc>30 && calcImc<=35){
+    document.write(`Obesidade Grau I!<br> IMC: ${calcImc.toFixed(2)}`);
+}else if(calcImc>35 && calcImc<=40){
+    document.write(`Obesidade Grau II!<br> IMC: ${calcImc.toFixed(2)}`);
+}else if(calcImc>40){
+    document.write(`Obesidade Grau III!<br> IMC: ${calcImc.toFixed(2)}`);
+}
+
+
+
+    </script>
+</body>
+</html>

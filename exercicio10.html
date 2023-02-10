@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*Informe o preço dos produtos de uma loja, conforme indicado na tabela abaixo. O
+algoritmo deve receber o código do produto como entrada.
+
+Código Produto Preço
+1 Sapato R$ 99,99
+2 Bolsa R$ 103,89
+3 Camisa R$ 49,98
+4 Calça R$ 89,72
+
+Ânima
+JavaScript
+Wesley Dias Maciel
+2023/01
+
+5 Blusa R$ 97,35*/
+
+const codigoProduto = parseInt(prompt("Informe o código do produto:",""));
+
+/*if(codigoProduto == 1){
+    document.write(`Sapato || R$99,99`);
+}else if(codigoProduto == 2){
+    document.write(`Bolsa || R$103,89`)
+}else if(codigoProduto == 3){
+    document.write(`Camisa || R$49,98`)
+}else if(codigoProduto == 4){
+    document.write(`Calça || R$89,72`)
+}else{
+    document.write(`Opçaõ inválida!!!`)
+}*/
+
+switch(codigoProduto){
+    case 1:
+        document.write(`Sapato || R$99,99`);
+    break;
+    case 2:
+        document.write(`Bolsa || R$103,89`);
+    break;
+    case 3:
+        document.write(`Camisa || R$49,98`);
+    break;
+    case 4:
+        document.write(`Calça || R$89,72`);
+    break;
+    case 5:
+        document.write(`Blusa || RS:97,35`);
+    break;
+    default: document.write("Opção inválida!!")
+
+}
+
+
+
+    </script>
+</body>
+</html>

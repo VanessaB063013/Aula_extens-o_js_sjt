@@ -9,6 +9,17 @@
 <body>
     <script type="text/javascript">
         /*Retorne o valor da função abaixo após receber um valor qualquer de entrada:*/
+        var x = parseFloat(prompt("Informe o valor de x:",""));
+
+        if(x < -2){
+            document.write(`f(${x}) = <br> 2 * (${x}) + 2 =  ${2 * x + 2}`);
+        } else if(x >= -2 && x <3){
+            document.write(`f(${x}) = 3`);
+            
+        } else{
+            document.write(`f(${x}) = ${-x}`);
+        }
+
     </script>
 </body>
 </html>
